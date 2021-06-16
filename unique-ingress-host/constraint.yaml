@@ -10,4 +10,4 @@ spec:
     # namespaces:
     #   - "default"
     # excludedNamespaces: ["kube-system"]
-  enforcementAction: dryrun
+  enforcementAction: deny
