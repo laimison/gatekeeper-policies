@@ -1,0 +1,13 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sContainerEphemeralStorageLimits
+metadata:
+  name: container-must-have-ephemeral-storage-limits
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    excludedNamespaces: ["kube-system"]
+  enforcementAction: warn
+  parameters:
+    ephemeral-storage: "5Gi"

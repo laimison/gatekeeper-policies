@@ -1,0 +1,2 @@
+kubectl describe K8sContainerEphemeralStorageLimits
+kubectl api-resources | grep K8sContainerEphemeralStorageLimits
