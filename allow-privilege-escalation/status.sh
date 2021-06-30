@@ -1,0 +1,2 @@
+kubectl describe K8sPSPAllowPrivilegeEscalationContainer
+kubectl api-resources | grep K8sPSPAllowPrivilegeEscalationContainer
