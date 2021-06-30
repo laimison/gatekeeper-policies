@@ -1,0 +1,14 @@
+# ProcMountType should be enabled via Kubernetes feature gates for this policy to work
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sPSPProcMount
+metadata:
+  name: psp-proc-mount
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    excludedNamespaces: ["kube-system"]
+  enforcementAction: warn
+  parameters:
+    procMount: Default
