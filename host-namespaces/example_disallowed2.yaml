@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-host-namespace-disallowed2
+  labels:
+    app: nginx-host-namespace
+spec:
+  hostIPC: true
+  containers:
+  - name: nginx
+    image: nginx
