@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ingress-host-example
+  namespace: default
 spec:
   rules:
   - host: example-host.example.com
@@ -16,6 +17,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ingress-host-disallowed
+  namespace: default
 spec:
   rules:
   - host: example-host.example.com

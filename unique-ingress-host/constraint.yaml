@@ -9,5 +9,5 @@ spec:
         kinds: ["Ingress"]
     # namespaces:
     #   - "default"
-    # excludedNamespaces: ["kube-system"]
+    excludedNamespaces: ["kube-system"]
   enforcementAction: deny
